@@ -1,0 +1,40 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    height: 400px;
+    width: 400px;
+    /* border: 1px solid black; */
+}
+.box{
+    height: 200px;
+    width: 200px;
+    background-color:yellow;
+    animation: orbit 2s linear  infinite ;
+}
+@keyframes orbit{
+    0%{
+       transform: translate(0,0);
+       background-color: yellow;
+    }
+    25%{
+        transform: translate(200px,0);
+       background-color:purple;
+    }
+    50%{
+        transform: translate(200px,200px);
+       background-color:rgb(0, 0, 0);
+    }
+    75%{
+        transform: translate(0px,200px);
+       background-color:brown;
+    }
+}
